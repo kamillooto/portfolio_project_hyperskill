@@ -1,0 +1,238 @@
+#navigation_bar {
+    grid-area: navigation_bar;
+}
+
+#home {
+    grid-area: home;
+}
+
+#about {
+    grid-area: about;
+}
+
+#portfolio {
+    grid-area: portfolio;
+}
+
+#contacts {
+    grid-area: contacts;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: navajowhite;
+    display: grid;
+    grid-template-areas:
+    "navigation_bar"
+    "home"
+    "about"
+    "portfolio"
+    "contacts"
+    "footer";
+    font-family: Century Gothic, serif;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+    /*NAVIGATION BAR*/
+#navigation_bar{
+    width: 100%;
+    height: 50px;
+    background-color: #2c100c;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+}
+
+.menu_list{
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+}
+
+.menu_list li{
+    height: 100%;
+    float: left;
+    justify-content: center;
+}
+
+.menu_list a {
+    height: 100%;
+    width: 12.5vw;
+    display: block;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu_list a:hover{
+    color: #2c100c;
+    background-color: gray;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background: url("images/bg.jpg");
+    background-size: cover;
+    position: absolute;
+}
+
+#home h1{
+    position: absolute;
+    color: lightgray;
+    bottom: 15vh;
+    left: 10vw;
+    font-size: 3em;
+}
+
+h2{
+    font-size: 50px;
+}
+
+/*ABOUT*/
+#about{
+    height: 100vh;
+    width: 100%;
+    background: gray;
+    position: absolute;
+    top: 100vh;
+}
+
+#about_back_img {
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    height: 350px;
+    width: 500px;
+    max-width: 90vw;
+}
+
+#about_person_img {
+    position: absolute;
+    left: 325px;
+    top: 150px;
+    height: 325px;
+    width: 300px;
+    max-width: 90vw;
+}
+
+#about div{
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    height: 350px;
+    width: 500px;
+    top: 10%;
+    right: 150px;
+    font-size: 1.5em;
+}
+
+/*PORTFOLIO*/
+#portfolio{
+    height: 100vh;
+    width: 100%;
+    background: #ececec;
+    position: absolute;
+    top: 200vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolio h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#portfolio img{
+    height: 80%;
+    width: 100%;
+}
+
+#projects_container {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-gap: 10px;
+}
+
+#projects_container div {
+/*    position: relative;*/
+    width: 100%;
+    background: white;
+/*    transition: 1s ease-in-out;*/
+}
+
+/*#projects_container div:hover{
+    transform: scale(1.2);
+    border: solid #2c100c 2px;
+    z-index: 1;
+}*/
+
+#projects_container button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#projects_container button:hover {
+    border: 1px solid gray;
+}
+
+#contacts{
+    height: 50vh;
+    width: 100%;
+    background: #f5f5f5;
+    position: absolute;
+    top: 300vh;
+    text-align: center;
+}
+
+#contacts img {
+    height: 50px;
+    width: 50px;
+}
+
+#contacts h2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #2c100c;
+    position: absolute;
+    top: 340vh;
+    z-index: 2;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+footer h2{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+footer p{
+    margin-top: 0;
+}

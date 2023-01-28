@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pop_up_style.css">
+    <link rel="stylesheet" href="hamburger_menu_style.css">
+    <script defer src="pop_up_script.js"></script>
+    <script defer src="hamburger_menu_script.js"></script>
+</head>
+<body>
+<main>
+    <nav id="navigation_bar">
+        <ul class="menu_list">
+            <li class="menu_item"><a href="#about">About me</a> </li>
+            <li class="menu_item"><a href="#portfolio">Portfolio</a> </li>
+            <li class="menu_item"><a href="#contacts">Contacts</a> </li>
+            <li class="menu_item"><a href="#home">Home</a> </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <header id="home">
+        <h1>Jane Doe,<br>Front-end developer</h1>
+    </header>
+<section id="about">
+    <img id="about_back_img" src="images/image.jpg" alt="back image">
+    <img id="about_person_img" src="images/person.jpg" alt="person image">
+    <div>
+        <h2>About me</h2>
+        <p>Hi, I'm Jane Doe. I've been a junior front-end developer for 5 months now.
+            For me, programming is not just a job, it's a hobby.
+            I'm open to new knowledge, I like to study new technologies and apply them in practice.
+            <br><b>Skills:</b> HTML, CSS, JS, React</p>
+    </div>
+</section>
+<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div id="projects_container">
+        <button data-window-target="#modal_project_1" class="open-window"><div>
+            <img src="images/project1.png" alt="First project">
+            <p>Flashcards</p>
+        </div></button>
+        <button data-window-target="#modal_project_2" class="open-window"><div>
+            <img src="images/project2.png" alt="Second project">
+            <p>Virtual Piano</p>
+        </div></button>
+    </div>
+
+    <div class="window" id="modal_project_1">
+        <div class="modal-header">
+            <div class="title">Flashcards</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>You can see the project at the following link: flashcards.</p>
+            <br>
+            <p>I did this project when I was studying the frontend on HyperSkill. I created
+                a web page with flip-down flash cards. learned some HTML basics and
+                learned that CSS can easily make a beautiful design.</p>
+        </div>
+    </div>
+    <div class="window" id="modal_project_2">
+        <div class="modal-header">
+            <div class="title">Virtual Piano</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p>You can see the project at the following link: virtual piano.</p>
+            <br>
+            <p>I did this project when I was studying the frontend on HyperSkill. I created
+                a web page with flip-down flash cards. learned some HTML basics and
+                learned that CSS can easily make a beautiful design.</p>
+        </div>
+    </div>
+</section>
+<section id="contacts">
+    <h2>Contacts</h2>
+    <p>You can contact me at
+        <a href="mailto:test@hyperskill.org">test@hyperskill.org</a>
+        <br>or phone number
+        <a href="tel:12345678910">12345678910</a></p>
+    <div id="social-media">
+        <img src="images/github.svg" alt="github logo">
+        <img src="images/facebook.svg" alt="facebook logo">
+        <img src="images/twitter.svg" alt="twitter logo">
+        <img src="images/instagram.svg" alt="instagram logo">
+    </div>
+</section>
+    <footer id="footer">
+        <h2>Jane Doe</h2>
+        <p>2020</p>
+    </footer>
+    <div id="overlay"></div>
+</main>
+</body>
+</html>
